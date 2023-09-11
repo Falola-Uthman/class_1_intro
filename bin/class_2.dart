@@ -5,9 +5,11 @@
 
 
 
-
-int addTwoNumbers (int firstNumber, int secondNumber) {
- int result =  firstNumber + secondNumber;
+int multiplyTwo ({required int firstNumber, required int secondNumber}){
+ int answer = firstNumber * secondNumber;
+ return answer;
+}
+int divideTwo ({required int numberOne, required int numberTwo}){
+ int result = numberOne ~/ numberTwo;
  return result;
-
 }
