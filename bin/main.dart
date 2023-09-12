@@ -4,7 +4,25 @@ import 'class_2.dart';
 void main(List<String> arguments) {
   //class1Intro(arguments);
 
-print(multiplyTwo(firstNumber:2, secondNumber: 3));
+
+
+//Practice Answer
+  Set number = {quadraticFunction(a:1, b:-2 ,c:-15).elementAt(0),quadraticFunction(a:1, b:-2 ,c:-15).elementAt(1) };
+ if(number.elementAt(0).isNaN || (number.elementAt(1).isNaN)) {
+   print("The answer is undefined");
+ }
+ else {
+   print('The answer is ${number.elementAt(
+       0)}' ' or ${number.elementAt(1)}');
+ }
+
+
+
+
+
+
+
+ print(multiplyTwo(firstNumber:2, secondNumber: 3));
 
 int divisionResult = divideTwoNumbers(numberOne:4,numberTwo: 3);
 
