@@ -7,7 +7,7 @@ void main(List<String> arguments) {
 
 
 //Practice Answer
-  Set number = {quadraticFunction(a:1, b:-2 ,c:-15).elementAt(0),quadraticFunction(a:1, b:-2 ,c:-15).elementAt(1) };
+  Set number = quadraticFunction(a:1, b:2 ,c:3);
  if(number.elementAt(0).isNaN || (number.elementAt(1).isNaN)) {
    print("The answer is undefined");
  }

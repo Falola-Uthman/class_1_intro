@@ -24,10 +24,9 @@ int divideTwoNumbers ({required int numberOne, required int numberTwo}){
 
 //Practice Answer
 Set<double> quadraticFunction({required int a, required int b, required int c}){
-int x=4;
-int y=2;
-  double answer1 = (-b + (sqrt((b * b) - (x * a * c)))) / (y * a);
- double answer2 = (-b - (sqrt((b * b) - (x * a * c)))) / (y * a);
+
+  double answer1 = (-b + (sqrt((b * b) - (4 * a * c)))) / (2 * a);
+ double answer2 = (-b - (sqrt((b * b) - (4 * a * c)))) / (2 * a);
  Set<double> answers ={answer1, answer2};
  return answers;
 }
