@@ -1,8 +1,11 @@
 
 import 'class_2.dart';
+import 'class_3.dart';
 
 void main(List<String> arguments) {
   //class1Intro(arguments);
+
+  declareClass();
 
 
 
