@@ -6,26 +6,34 @@ enum Gender { male, female }
 class HumanBeing {
   //constructor
 
-  String firstName;
-  String lastName;
+  final String firstName;
+  final String lastName;
   double height;
-  DateTime dOB;
-  Gender genderType;
+  final DateTime dOB;
+  final Gender genderType;
 
-  HumanBeing(
-      {required this.firstName,
-      required this.lastName,
-      required this.height,
-      required this.dOB,
-      required this.genderType});
+  HumanBeing({required this.firstName,
+    required this.lastName,
+    required this.height,
+    required this.dOB,
+    required this.genderType});
 
   //getter and setter
 
-  String get age => (DateTime.now().difference(dOB).inDays/365).toStringAsFixed(0);
+  set setHeight(double newHeight) {
+    height = newHeight;
+  }
+
+  int get _age =>
+      DateTime
+          .now()
+          .difference(dOB)
+          .inDays ~/ 365;
+
   String get fullName => '$firstName $lastName';
 
   void sayHello() {
-    print('Hello there!');
+    print('$_age');
   }
 }
 
@@ -42,6 +50,18 @@ declareClass() {
       height: 175,
       dOB: DateTime(1995, 4, 2),
       genderType: Gender.male);
-print(kayode.age);
+  print(kayode);
+}
 
+//loops
+
+learningLoops() {
+  List friends = ['Lisa', 'Shola', 'Theo', 'John', 'Jam', 'Peter', 'OGT'];
+  int i = 0;
+
+  while (i<friends.length){
+    print('Hello ${friends[i]}');
+    i++;
+
+  }
 }
