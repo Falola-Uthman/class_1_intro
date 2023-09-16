@@ -1,14 +1,18 @@
-
 import 'class_2.dart';
 import 'class_3.dart';
+import 'class_5.dart';
 
 void main(List<String> arguments) {
   //class1Intro(arguments);
 
   //declareClass();
-learningLoops();
+//learningLoops();
+//nullVal();
 
+customErrorCatcher(() => handleFunctions());
+//handleFunctions();
 
+/*
 //Practice Answer
   Set number = quadraticFunction(a:1, b:2 ,c:3);
  if(number.elementAt(0).isNaN || (number.elementAt(1).isNaN)) {
@@ -38,7 +42,7 @@ else {
   print('division result is greater than 5');
 
 }
-
+*/
 
 // OR ||
 // AND &&
@@ -49,6 +53,4 @@ else {
 // equal to ==
 // not equal to !=
 // and
-
-
 }

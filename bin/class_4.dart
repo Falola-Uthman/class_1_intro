@@ -77,3 +77,13 @@ class RottWeiler extends Dog {
       required super.eye,
       required super.color});
 }
+
+class GermanShepherd extends Dog {
+  GermanShepherd(
+      {required super.name,
+      required super.legs,
+      required super.eye,
+      required super.color});
+}
+
+
